@@ -19,6 +19,6 @@ after_success:
 
 #push images to dockerhub
   - docker push craigsmith132/multi-client
-  - docker push craigsmith132/multi-ngix
+  - docker push craigsmith132/multi-nginx
   - docker push craigsmith132/multi-server
   - docker push craigsmith132/multi-worker
