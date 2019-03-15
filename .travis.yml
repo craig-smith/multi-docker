@@ -15,10 +15,10 @@ after_success:
   - docker build -t craigsmith132/multi-worker ./worker
 
 #log into docker CLI
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 #push images to dockerhub
-- docker push craigsmith132/multi-client
-- docker push craigsmith132/multi-ngix
-- docker push craigsmith132/multi-server
-- docker push craigsmith132/multi-worker
+  - docker push craigsmith132/multi-client
+  - docker push craigsmith132/multi-ngix
+  - docker push craigsmith132/multi-server
+  - docker push craigsmith132/multi-worker
